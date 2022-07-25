@@ -1,0 +1,60 @@
+
+li{ list-style: none;}
+/* body{overflow-x: hidden;} */
+
+#gnb a{ color:black; text-decoration: none;}
+#hd > div{
+    border-bottom:1px solid black
+}
+
+.open > .fa-xmark { display:block }
+.open > .fa-bars { display:none }
+
+.fa-xmark { display:none }
+.fa-bars { display:block }
+
+.open + ul{ 
+    display:flex !important; 
+    position: fixed; background-color: #ccc;
+    left:0; right:0; top: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    line-height: 2;
+}
+
+.open + #gnb:before{
+    content:"";
+    display: block;
+    position: absolute;
+    width:30px;
+    height:30px;
+    background-color: #ccc;
+    left:0; right:0; margin:0 auto;
+    transform:rotate(-45deg);
+    top:-15px;
+}
+
+#main > div{height:100vh;}
+
+#gnb a.act{color:olive;}
+
+#portfolio .swiper-slide{
+    max-height:700px;
+    height:100vw;
+}
+
+/* #portfolio .sir{background-image:url('https://img-kyowontour.kyowontour.com/hp/202205/20220518153511665fgbisbmnlptyejr.jpg');}
+#portfolio .hardcoord{background-image:url('https://img-kyowontour.kyowontour.com/hp/202206/20220608172042990azgelywwgtkwvbk.jpg');}
+#portfolio .ecom{background-image:url('https://img-kyowontour.kyowontour.com/hp/202207/20220701172233643zgsedtmphwclbvq.jpg');} */
+
+/*무임승차 법 : 최적화 */
+#me h2{background-color:white; 
+       transition-delay:1s;
+       transition:0.8s;
+       color: black;}
+.aos-animate h2{
+    background-color:red !important;
+    color:white !important;
+}
