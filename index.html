@@ -11,7 +11,7 @@
         <link rel="apple-touch-icon-precomposed" href="/yubeen/img/barogagi.png">
         <meta name="msapplication-TileImage" content="/yubeen/img/favicon270.png" size="270x270" />
       
-        <title>NCS 5개월 과정 서유빈</title>
+        <title>NCS 스마트웹앱 UXUI 5개월과정 서유빈</title>
          <!-- 원래는 여기에 구글 애널리틱스(태그메니저)가들어옴. 무료에서 유로로 전환,태그 추적기 구글/페이스북가 -->
          
          <!-- 구글폰트 -->
@@ -26,7 +26,7 @@
         <meta name="description" content="서유빈의 포트폴리오입니다." />
         <link rel="canonical" href="//dbqls2609.dothome.co.kr" /> 
         <meta property="og:locale" content="ko_KR" />
-        <meta property="og:site_name" content="카페24" />
+        <meta property="og:site_name" content="Yubeen's Portfolio" />
         <meta property="og:url" content="//dbqls2609.dothome.co.kr"/>
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Seo Yu Bin's Portfolio" />
@@ -37,7 +37,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="/sogae/css/style.css">
+        <link rel="stylesheet" href="/sogae/css/style.css?ver=<?php echo time(); ?>">
       
       </head>
 <body>
@@ -45,9 +45,7 @@
 
         <header id="hd">
             <div class="container-md d-flex justify-content-between align-items-center fixed-top">
-                <h1><a href=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180" viewBox="0 0 180 180">
-                    <image x="10" y="5" width="44" height="106" xlink:href="data:img/png;base64,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"/>
-                  </svg></a></h1>
+                <h1><a class="logo"><img src="/sogae/img/portlogo.png" alt="logo"></a></h1>
                 <button id="allMenu" class="d-md-none">
                     <i class="fa-solid fa-bars">
                         <span class="sr-only">열기</span>
@@ -57,49 +55,19 @@
                     </i>                    
                 </button>
                 <ul id="gnb" class="d-md-flex d-none">
-                    <li class="pl-md-3"><a href="#portfolio">포트폴리오</a></li>
-                    <li class="pl-md-3"><a href="#me">나</a></li>
-                    <li class="pl-md-3"><a href="#preinterview">인터뷰</a></li>
+                    <li class="pl-md-3"><a href="#home"><span class="position-relative">Home</span></a></li>
+                    <li class="pl-md-3"><a href="#about"><span class="position-relative">about</span></a></li>
+                    <li class="pl-md-3"><a href="#portfolio"><span class="position-relative">Portfolio</span></a></li>
+                    <li class="pl-md-3"><a href="#etc"><span class="position-relative">etc</span></a></li>
+                    <li class="pl-md-3"><a href="#contact"><span class="position-relative">contact</span></a></li>
                 </ul>
             </div>
         </header>
 
-
-       
         <section id="main">
-            <div id="portfolio">
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                      <!-- Slides -->
-                      <div class="swiper-slide sir">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <h2> 
-                            <!-- 1.그누보드 포트폴리오 배너(1080*1080)>>스타일 처리(퍼블) -->
-                            <strong>웹퍼</strong> 
-                            </h2>                       
-                            <div>
-                            <a href="피그마">피그마</a>
-                            <a href="/gnu/">사이트 미리보기</a>
-                            <a href="깃허브">깃 허브</a>
-                            </div>                       
-                        </div>
-                      </div>
-                      <div class="swiper-slide hardcoord">Slide 2</div>
-                      <div class="swiper-slide ecom">Slide 3</div>                      
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                  
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                  
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
-                  </div>
-            </div>
-            <div id="me">
+            <div id="home">
+            </div>           
+            <div id="about">
                 <div class="d-lg-flex">
                    <div class="col-lg-6">
                     <div data-aos="zoom-out"  data-aos-offset="500" data-aos-duration="500">
@@ -108,43 +76,104 @@
                        <img alt="나" src="">
                    </div>
                  </div>
-                    <div class="col-lg-6 skill">
+                    <!-- <div class="col-lg-6 skill">
                         <dl class="d-md-flex flex-wrap">
-                            <dt class="col-md-4">graphic</dt>
+                            <dt class="col-md-4 ">Photoshop & Illustrator</dt>
                             <dd class="col-md-8">
                                 <div>
-                                    <p>95%</p>
+                                    <p>90%</p>
                                 </div>
                             </dd>
                             <dt class="col-md-4">figma</dt>
                             <dd class="col-md-8">
                                 <div>
-                                    <p>95%</p>
+                                    <p>90%</p>
                                 </div>
                             </dd>
-                            <dt class="col-md-4">ppt</dt>
+                            <dt class="col-md-4">Procreate</dt>
                             <dd class="col-md-8">
                                 <div>
-                                    <p>95%</p>
+                                    <p>90%</p>
                                 </div>
                             </dd>
-                            <dt class="col-md-4">vscode</dt>
+                            <dt class="col-md-4">plan</dt>
                             <dd class="col-md-8">
                                 <div>
-                                    <p>95%</p>
+                                    <p>90%</p>
                                 </div>
                             </dd>
-                            <dt class="col-md-4">graphic</dt>
+                            <dt class="col-md-4">html5 & css</dt>
                             <dd class="col-md-8">
                                 <div>
-                                    <p>95%</p>
+                                    <p>50%</p>
                                 </div>
                             </dd>
                         </dl>                       
-                    </div>
+                    </div> -->
+
+                    <div class="skill col-md-6 p-5 p-md-5 mt-5 mt-md-0">
+                        <h4 class="mb-5"> Design Skills</h4>
+                        <div class="skills">
+                          <ul>
+                            <li class="ability1List1 d-flex pb-3">
+                              <img class="mr-4 mt-2 img-fluid" src="/img/pro.png" alt="포토샵일러스트">
+                              <div class="haha flex-grow-1">
+                                <p class="m-1">Photoshop &amp; Illustrator</p>
+                                <div>
+                                  <p class="skill_per m-1 position-relative aos-init aos-animate" data-aos="fade-in" data-per="90"></p>
+                                   <p class="ppp ml-1">이미지의 합성과, 레이아웃 등 툴을 자유롭게 사용하여 작업이 가능합니다.</p>
+                                </div>
+                              </div>
+              
+                            </li>
+                            <li class="ability1List2 d-flex pb-3">
+                              <img class="mr-4 mt-2 img-fluid" src="/img/atom1.png" alt="피그마">
+                              <div class="haha flex-grow-1">
+                                <p class="m-1">Figma</p>
+                                <p class="skill_per hha m-1 position-relative aos-init aos-animate" data-aos="fade-in" data-per="50">
+                                </p>
+              
+                                <p class="ppp ml-1">UIUX 디자인 프로토타입을 제작하여 실시간 협업이 가능합니다.
+                                </p>
+                              </div>
+              
+                            </li>
+                            <li class="ability1List5 d-flex pb-3">
+                              <img class="mr-4 mt-2 img-fluid" src="" alt="프로크리에이트">
+                              <div class="haha flex-grow-1">
+                                <p class="m-1">Procreate
+                                </p>
+                                <p class="skill_per m-1 position-relative aos-init aos-animate" data-aos="fade-in" data-per="90"></p>
+              
+                                <p class="ppp ml-1">태블릿을 이용한 핸드드로잉과 캐릭터 제작이 가능합니다.
+                                </p>
+                              </div>
+                            </li>
+                            <li class="ability1List3 d-flex pb-3">
+                              <img class="mr-4 mt-2 img-fluid " src="" alt="플랜">
+                              <div class="haha flex-grow-1">
+                                <p class="m-1">plan</p>
+                                <p class="skill_per m-1 position-relative aos-init aos-animate" data-aos="fade-in" data-per="90"></p>
+              
+                                <p class="ppp ml-1">광고페이지 기획 및 쇼핑몰 기획서 제작이 가능합니다.
+                                </p>
+                              </div>
+                            </li>
+                            <li class="ability1List4 d-flex pb-3">
+                              <img class="mr-4 mt-2 img-fluid" src="/img/XD.png" alt="xd">
+                              <div class="haha flex-grow-1">
+                                <p class="m-1">html5 &amp; css</p>
+                                <p class="skill_per m-1 position-relative aos-init aos-animate" data-aos="fade-in" data-per="80"></p>
+              
+                                <p class="ppp ml-1">HTML5의 시멘트구조 이해 및 경로를 이해하여 소스관리가 가능합니다.
+                                </p>
+                              </div>
+              
+                            </li>
+              
                 </div>
             </div>
-            <div id="preinterview">
+            <!-- <div id="preinterview">
                 <h3>사전인터뷰</h3>
                 <dl>
                     <dt>지방출장가능한가요???</dt>
@@ -154,7 +183,7 @@
                     <dt>지방출장가능한가요???</dt>
                     <dd>시러요</dd>
                 </dl>
-            </div>
+            </div> -->
         </section>
         <footer id="ft" class="d-none">
                 나의 대외적인 정보( 전화번호 / 카카오톡 )

@@ -1,11 +1,13 @@
 
-li{ list-style: none;}
+/* ul{margin-top:-63px;} */
+
+
+li{ list-style: none;
+    margin-right:50px;
+}
 /* body{overflow-x: hidden;} */
 
-#gnb a{ color:black; text-decoration: none;}
-#hd > div{
-    border-bottom:1px solid black
-}
+#gnb a{ display: block; color:black; text-decoration: none; text-align: center;}
 
 .open > .fa-xmark { display:block }
 .open > .fa-bars { display:none }
@@ -37,8 +39,30 @@ li{ list-style: none;}
 }
 
 #main > div{height:100vh;}
+#gnb li a{ position: relative;}
+#gnb li a span{ position: relative;}
 
-#gnb a.act{color:olive;}
+
+#gnb li a:before
+{
+    content: "";
+    position: absolute;
+    display: block;
+    top:0;
+    left:0; right:0;
+    bottom:0;
+    background-color:#2A5D83;
+    border-radius: 10px;
+    width:0;
+    margin:auto;
+    transition: 0.5s;
+}
+
+#gnb li:hover a:before{ width:100%}
+
+#gnb li:hover a{
+    color:#d0d82e;
+}
 
 #portfolio .swiper-slide{
     max-height:700px;
@@ -58,3 +82,18 @@ li{ list-style: none;}
     background-color:red !important;
     color:white !important;
 }
+
+
+/* //////////////about/////////////// */
+#about{background-color:#231F20;}
+
+/*20220802 본인 작업*/
+
+#home{background-image:url("/sogae/img/Pmainbanner.gif");
+    width: 100%;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    height: 100vw;
+   }
+
+.logo{width: 100px;}
