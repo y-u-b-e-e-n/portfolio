@@ -1,0 +1,12 @@
+*{font-size:13px};
+a:hover {
+    color:#5B1A7C;
+    text-decoration:none;
+}
+#gnb .gnb_1dli:hover > a {color:#5B1A7C;}
+
+#Mbanner{background-image:url("/yubeen/img/Gmainbanner.jpg");
+width: 100%;
+background-size:100% auto;
+background-repeat:no-repeat;
+}

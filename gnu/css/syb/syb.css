@@ -1,0 +1,175 @@
+*{ font-family: 'Noto Sans KR'; font-weight: 400; }
+.right-0{right:0}
+.left-0{ left:0}
+.top-0{ top:0}
+.h-100{ height:100vh !important; padding:160px 0; box-sizing: border-box;}
+.system{
+         margin-top:-130px;
+       }
+
+#popup_yubeen{
+background: #5B1A7C;
+
+}
+#popup_yubeen span{
+    color: #CBB5F7;
+    font-size: 1.3em;
+    font-weight: 300;
+    padding-right: 35px;
+}
+#popup_yubeen button img{ width:20px}
+
+
+#system{margin-top: -80;}
+
+#system li h5{color: #5B1A7C; 
+               font-size: 1.2em;
+               font-weight:500;
+               margin-top:20px;
+             }
+
+#system span,h3{color: #5B1A7C;
+                font-weight:500;   
+                font-size:2rem;        
+               }
+
+#system h3{
+              font-size:2.5rem;
+              text-align: center;
+              font-weight:600;
+              margin-left:50px;
+          }
+
+/* #system h3{color: #5B1A7C;} */
+.topgradient{
+  background: rgb(180,167,216);
+background: -moz-linear-gradient(180deg, rgba(180,167,216,1) 0%, rgba(153,203,204,1) 48%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(180,167,216,1) 0%, rgba(153,203,204,1) 48%, rgba(255,255,255,1) 100%);
+background: linear-gradient(180deg, rgba(180,167,216,1) 0%, rgba(153,203,204,1) 48%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4a7d8",endColorstr="#ffffff",GradientType=1);
+}
+
+.bottomgradient{
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(159,205,206,1) 25%, rgba(180,167,216,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(159,205,206,1) 25%, rgba(180,167,216,1) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(159,205,206,1) 25%, rgba(180,167,216,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#b4a7d8",GradientType=1);
+}
+
+/*메인매너*/
+.puzzle{
+margin-top:200px;
+}
+
+.puzzle p{
+  color: #fff;
+  font-size:1.9em;
+  text-align: center;
+  text-shadow:1px 1px 1px gray;
+}
+
+.puzzle h3{
+  font-weight:bold;
+  margin-bottom:20px;
+  font-size:3em;
+  text-shadow:1px 1px 1px rgb(167, 167, 167);
+}
+
+#mainBanner{ 
+  background-image: url(/yubeen/img/Gmainbanner.png); 
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center bottom;
+}
+
+.button{
+  background-color:rgba(255, 255, 255, 0.3);
+  color:#fff;
+  border:1px solid #fff;
+  padding:8px 29px;
+  display: inline-block;
+  font-size:1.5rem;
+  font-weight:100;
+  margin-left:60px;
+}
+
+/*큐엔에이*/
+
+.qbg{
+  background-image: url(/yubeen/img/Q.png);
+  background-size: 100%  auto;
+  background-repeat: no-repeat;
+  width:280px;
+  height:calc( 280px * 1.44 );
+  color:#5B1A7C; 
+  font-size: 1.9em;
+  font-weight:700;
+
+}
+.abg{
+  background-image: url(/yubeen/img/A.png);
+  background-size: 100%  auto;
+  background-repeat: no-repeat;
+  width:280px;
+  height:calc( 280px * 2.44 );
+  background-position: center bottom;
+}
+
+.abg P{ 
+  color: #5B1A7C;
+  font-size: 1.6em;
+  font-weight: 500;
+  text-align: end;
+}
+.abg span{
+  color: #E91C75;
+  font-size: 1.6em;
+  font-weight: 500;
+  text-align: end;
+}
+
+
+.gnb_1da.act{ color: #5B1A7C }
+
+
+/*중간 베너*/
+#middlebanner{
+  background-image: url(/yubeen/img/Gmiddlebanner.png);
+  background-size: 100%  auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align:end;
+  margin-top:-155px;
+}
+
+#youtube{
+
+  background-size: 100%  auto;
+  background-repeat: no-repeat;
+}
+.youtubeback{
+    background-image: url(/yubeen/img/back.png);
+    background-size: 60%  auto;
+    background-repeat: no-repeat;
+    background-position:center -5%;
+    margin-top:-400px;
+}
+
+
+.iconNumber{
+  margin: 150px;
+}
+
+#Pbanner{
+  background-image: url(/yubeen/img/Pbanner.png);
+  background-size: 100%  auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+
+.snsimg ul li{
+  width:20%;
+}
