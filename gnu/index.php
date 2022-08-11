@@ -33,13 +33,14 @@ include_once(G5_PATH.'/head.php');
     </section>
     <section id="qna" class="overflow-hidden h-100">
         <div class="container d-flex justify-content-between align-items-stretch">
-            <p class="qbg ">
-                모두가 좋다고 하는 영양제,<br>
+            <div class="qbg ">
+               <p> 모두가 좋다고 하는 영양제,<br>
                 과연 나에게도 진짜 필요한걸까요?       
             </p>
+            </div>
             <i class='d-flex flex-column justify-content-center'><img src="/yubeen/img/qea.png" alt=""></i>
             <div class="abg d-flex flex-column justify-content-end">
-                <p>
+                <p class="mb-0">
                 우리는 생활 환경, 식습관, 건강 상태에 따라<br>각자 다른 건강 관리가 필요합니다. </p>
                     <span>
                     마이퍼즐은 고객 한 분, 한 분에 맞춘 건강기능식품이<br>필요하다는 생각으로부터 출발했습니다.
@@ -119,7 +120,7 @@ include_once(G5_PATH.'/head.php');
                 </section>
                   </div>
                 
-                <div class='bottomgradient'>
+              
 
                 <section id="Pbanner">
                     <div class="container">
@@ -133,80 +134,79 @@ include_once(G5_PATH.'/head.php');
           <!-- sns 후기  -->
                 <section id="sns">
                    <div class="container">
-                    <div>
-                        <h3>마이퍼즐 고객님들의</h3>
-                        <h2>‘생생한 후기’</h2>
+                    <div class="d-flex justify-content-center">
+                        <h3>마이퍼즐 고객님들의</h3> <h2>  ‘생생한 후기’</h2>
                     </div>
                     <div class="snsimg">
-                      <ul class="d-flex">
+                      <ul class="row m-0">
                         <li>
                             <a><img src="/yubeen/img/sns1.png" class="img-fluid" alt="">
-                                <span class="tag">
-                                    <p></p>
-                                </span>
+                                <p class="tag">
+                                    <span></span>
+                                </p>
                             </a>
                         </li>
                         <li>
                             <a ><img src="/yubeen/img/sns2.png" class="img-fluid" alt="">
-                                <span class="tag">
-                                    <p></p>
-                                </span>
+                                <p class="tag">
+                                    <span></span>
+                                </p>
                             </a>
                         </li>
                         <li>
                             <a ><img src="/yubeen/img/sns3.png" class="img-fluid" alt="">
-                                <span class="tag">
-                                    <p></p>
-                                </span>
+                                <p class="tag">
+                                    <span></span>
+                                </p>
                             </a>
                         </li>
                         <li>
                             <a><img src="/yubeen/img/sns4.png" class="img-fluid" alt="">
-                                <span class="tag">
-                                    <p></p>
-                                </span>
+                                <p class="tag">
+                                    <span></span>
+                                </p>
                             </a>
                         </li>
                         <li>
                             <a ><img src="/yubeen/img/sns5.png" class="img-fluid" alt="">
-                                <span class="tag">
-                                    <p></p>
-                                </span>
+                                <p class="tag">
+                                    <span></span>
+                                </p>
                             </a>
                         </li>
                         <li>
                             <a><img src="/yubeen/img/sns6.png" class="img-fluid"  alt="">
-                                <span class="tag">
-                                    <p></p>
-                                </span>
+                                <p class="tag">
+                                    <span></span>
+                                </p>
                             </a>
                         </li>
                         <li>
                             <a><img src="/yubeen/img/sns7.png" class="img-fluid" alt="">
-                                <span class="tag">
-                                    <p></p>
-                                </span>
+                                <p class="tag">
+                                    <span></span>
+                                </p>
                             </a>
                         </li>
                         <li>
                             <a><img src="/yubeen/img/sns8.png" class="img-fluid" alt="">
-                                <span class="tag">
-                                    <p></p>
-                                </span>
+                                <p class="tag">
+                                    <soan></span>
+                                </p>
                             </a>
                         </li>
                         <li>
                             <a><img src="/yubeen/img/sns9.png" class="img-fluid" alt="">
-                                <span class="tag">
-                                    <p></p>
-                                </span>
+                                <p class="tag">
+                                    <span></span>
+                                </p>
                             </a>
                         </li>
                         <li>
                             <a><img src="/yubeen/img/sns10.png" class="img-fluid" alt="">
-                                <span class="tag">
-                                    <p></p>
-                                </span>
+                                <p class="tag">
+                                    <span></span>
+                                </p>
                             </a>
                         </li>
                     </ul>
@@ -214,7 +214,7 @@ include_once(G5_PATH.'/head.php');
                         </div>
                             </div>
                               </section>
-</div> 
+
 
     
 <?php

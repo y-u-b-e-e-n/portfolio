@@ -23,8 +23,8 @@ background: #5B1A7C;
 #system{margin-top: -80;}
 
 #system li h5{color: #5B1A7C; 
-               font-size: 1.2em;
-               font-weight:500;
+               font-size: 1.5em;
+               font-weight:900;
                margin-top:20px;
              }
 
@@ -37,7 +37,8 @@ background: #5B1A7C;
               font-size:2.5rem;
               text-align: center;
               font-weight:600;
-              margin-left:50px;
+              margin-left: -52px;
+              margin-top: 9px;
           }
 
 /* #system h3{color: #5B1A7C;} */
@@ -103,17 +104,24 @@ margin-top:200px;
   background-repeat: no-repeat;
   width:280px;
   height:calc( 280px * 1.44 );
-  color:#5B1A7C; 
-  font-size: 1.9em;
-  font-weight:700;
 
 }
+
+.qbg p{
+  color:#5B1A7C; 
+  font-size: 2.3em;
+  font-weight:700;
+  text-align: center;
+  width: 210%;
+  margin-top: 100px;
+}
+
 .abg{
   background-image: url(/yubeen/img/A.png);
   background-size: 100%  auto;
   background-repeat: no-repeat;
   width:280px;
-  height:calc( 280px * 2.44 );
+  height:calc( 280px * 2.55 );
   background-position: center bottom;
 }
 
@@ -121,14 +129,21 @@ margin-top:200px;
   color: #5B1A7C;
   font-size: 1.6em;
   font-weight: 500;
-  text-align: end;
+  text-align:center;
+  width:150%;
+  margin-left: -105%;
+  height: 9%;
 }
 .abg span{
   color: #E91C75;
   font-size: 1.6em;
   font-weight: 500;
-  text-align: end;
+  text-align:center;
+  width:170%;
+  margin-left: -116%;
+  height:16%;
 }
+
 
 
 .gnb_1da.act{ color: #5B1A7C }
@@ -157,11 +172,6 @@ margin-top:200px;
     margin-top:-400px;
 }
 
-
-.iconNumber{
-  margin: 150px;
-}
-
 #Pbanner{
   background-image: url(/yubeen/img/Pbanner.png);
   background-size: 100%  auto;
@@ -172,4 +182,50 @@ margin-top:200px;
 
 .snsimg ul li{
   width:20%;
+  padding: 6px;
 }
+.snsimg ul li a{
+  display: block;
+}
+
+#sns{
+  margin-top: -325px;
+}
+
+#sns .container h3,
+#sns .container h2{
+  text-align: center;
+  transform: translateY(-133px);
+  color: #5b1a7c;
+  font-weight: 600;
+
+}
+
+#sns .container h2{
+ font-size:2.5rem; 
+}
+
+.snsimg ul li:nth-child(2){
+  transform: translateY(-80px);
+}
+.snsimg ul li:nth-child(4){
+  transform: translateY(-80px);
+}
+.snsimg ul li:nth-child(7){
+  transform: translateY(-80px);
+}
+.snsimg ul li:nth-child(9){
+  transform: translateY(-80px);
+}
+
+/*유튜브*/
+
+.iconNumber li strong{
+                      font-size: 1.5em;
+                      font-weight: 500;
+                       }
+
+.iconNumber{align-items: stretch;
+            margin: 102px 90px;
+            width: 100%;
+          }
