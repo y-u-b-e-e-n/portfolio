@@ -53,7 +53,7 @@ include_once(G5_PATH.'/head.php');
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <div>
+                    <div style="margin-top: -32%;">
                         <span>그래서 마이퍼즐은</span>
                             <h3>관리합니다.</h3>
                     </div>
@@ -103,9 +103,8 @@ include_once(G5_PATH.'/head.php');
         <section id="youtube"></section>
                     <div class="container">
                         <div>
-                            <h3>마이퍼즐로 건강이 쉬워 진다!</h3>
-                            <!-- <em>쉬워</em> -->
-                                <iframe width="1054" height="592" src="https://www.youtube.com/embed/wSKfz5mgHT0?autoplay=1&mute=1&modestbranding=1&loop=1&playlist=wSKfz5mgHT0"
+                            <h3>마이퍼즐로 건강이 <em class='point'><ruby>쉬<rt>.</rt>워<rt>.</rt></ruby></em> 진다!</h3>
+                                <iframe style="border:none" width="1054" height="592"  src="https://www.youtube.com/embed/wSKfz5mgHT0?autoplay=1&mute=1&modestbranding=1&loop=1&playlist=wSKfz5mgHT0"
                                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             
                                 allowfullscreen></iframe>
@@ -138,74 +137,78 @@ include_once(G5_PATH.'/head.php');
                         <h3>마이퍼즐 고객님들의</h3> <h2>  ‘생생한 후기’</h2>
                     </div>
                     <div class="snsimg">
+                       <div>
+                        <a><img src="/yubeen/img/click!.png" class="click"></a>
+                       </div>
+
                       <ul class="row m-0">
                         <li>
                             <a><img src="/yubeen/img/sns1.png" class="img-fluid" alt="">
                                 <p class="tag">
-                                    <span></span>
+                                    <span>stic*****님<br>하루 딱 한 포로 끝나니 간편해요<br>#영양제추천 #직장인영양제 #건강한조각</span>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a ><img src="/yubeen/img/sns2.png" class="img-fluid" alt="">
                                 <p class="tag">
-                                    <span></span>
+                                    <span>psm1***님<br>합리적인 가격과 편리함이 가장 큰 매력포인트네요<br>#건강해지기 #영양제 #이너뷰티</span>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a ><img src="/yubeen/img/sns3.png" class="img-fluid" alt="">
                                 <p class="tag">
-                                    <span></span>
+                                    <span>lovr****님<br>언제 어디서나 건강 챙기기! 요즘 빠진 마이 퍼즐 영양제:)<br>#건강최고#간편영양제#영양제선물</span>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a><img src="/yubeen/img/sns4.png" class="img-fluid" alt="">
                                 <p class="tag">
-                                    <span></span>
+                                    <span>choe***님<br>나를 위한 맞춤영양제로 앞으로 건강해질 일만 남았네요<br>#영양제구독 #맞춤영양제추천 #종합영양제</span>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a ><img src="/yubeen/img/sns5.png" class="img-fluid" alt="">
                                 <p class="tag">
-                                    <span></span>
+                                    <span>hone********님<br>1봉에 모~두 들어있어서 들고다니기 편리해요!<br>#mypuzzle #건강문진 #정기구독</span>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a><img src="/yubeen/img/sns6.png" class="img-fluid"  alt="">
                                 <p class="tag">
-                                    <span></span>
+                                    <span>dail********님<br>신랑에게 필요한 영양소들만 쏙쏙담아 배송온 마이퍼즐<br>#가족건강 #가족영양제 #건강기능식품</span>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a><img src="/yubeen/img/sns7.png" class="img-fluid" alt="">
                                 <p class="tag">
-                                    <span></span>
+                                    <span>ride*****님<br>예쁜 보라색 박스안에 상담을 통해 처방 받은 나만의 맞춤 영양제<br>#퍼스널영양제 #월간영양제 #뉴트리원</span>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a><img src="/yubeen/img/sns8.png" class="img-fluid" alt="">
                                 <p class="tag">
-                                    <soan></span>
+                                    <soan>prei****님<br>다이어트에 안성맞춤 영양제. 마이 퍼즐로 다이어트 성공했어요!<br>#영양제 #마이 퍼즐 #건강다이어트</span>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a><img src="/yubeen/img/sns9.png" class="img-fluid" alt="">
                                 <p class="tag">
-                                    <span></span>
+                                    <span>kong******님<br>뭘 구매해야 할지 복잡했는데 알아서 전문설계해서 해주니,, 이게 진짜 허니<br>#마이퍼즐 #맞춤영양제 #mypuzzle</span>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a><img src="/yubeen/img/sns10.png" class="img-fluid" alt="">
                                 <p class="tag">
-                                    <span></span>
+                                    <span>ssjo***님<br>벌써 3회차. 요즘 건강에 소홀해진듯해 마이 퍼즐 앱으로 관리 중~<br>#영양제앱 #간편영양제 #건강설문</span>
                                 </p>
                             </a>
                         </li>

@@ -2,7 +2,7 @@
 .right-0{right:0}
 .left-0{ left:0}
 .top-0{ top:0}
-.h-100{ height:100vh !important; padding:160px 0; box-sizing: border-box;}
+
 .system{
          margin-top:-130px;
        }
@@ -28,12 +28,19 @@ background: #5B1A7C;
                margin-top:20px;
              }
 
-#system span,h3{color: #5B1A7C;
+#system span{color: #5B1A7C;
                 font-weight:500;   
                 font-size:2rem;        
                }
 
-#system h3{
+               em.point{
+                color: #E91C75;
+                font-weight:600;
+                font-size:inherit;
+                font-style: normal;
+               } 
+#system h3, .youtubeback h3{
+  color: #5B1A7C;
               font-size:2.5rem;
               text-align: center;
               font-weight:600;
@@ -41,6 +48,9 @@ background: #5B1A7C;
               margin-top: 9px;
           }
 
+.youtubeback h3{
+  transform: translateX(-253px);
+}
 /* #system h3{color: #5B1A7C;} */
 .topgradient{
   background: rgb(180,167,216);
@@ -75,6 +85,7 @@ margin-top:200px;
   margin-bottom:20px;
   font-size:3em;
   text-shadow:1px 1px 1px rgb(167, 167, 167);
+  color: #5B1A7C;
 }
 
 #mainBanner{ 
@@ -153,10 +164,12 @@ margin-top:200px;
 #middlebanner{
   background-image: url(/yubeen/img/Gmiddlebanner.png);
   background-size: 100%  auto;
-  background-repeat: no-repeat;
-  height: 100vh;
+  background-repeat: no-repeat;  
   text-align:end;
-  margin-top:-155px;
+  max-height:400px;
+  height:21vw;
+  padding:5vw 0;
+ 
 }
 
 #youtube{
@@ -164,12 +177,26 @@ margin-top:200px;
   background-size: 100%  auto;
   background-repeat: no-repeat;
 }
+
+.iconNumber li i img{
+  transform: translateY(-29px);
+}
+
+.point ruby{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.point rt{
+  font-size:1.5em;
+  
+}
+
 .youtubeback{
     background-image: url(/yubeen/img/back.png);
     background-size: 60%  auto;
     background-repeat: no-repeat;
     background-position:center -5%;
-    margin-top:-400px;
+
 }
 
 #Pbanner{
@@ -203,6 +230,8 @@ margin-top:200px;
 
 #sns .container h2{
  font-size:2.5rem; 
+ transform: translateY(-142px);
+ margin-left: 12px;
 }
 
 .snsimg ul li:nth-child(2){
@@ -229,3 +258,46 @@ margin-top:200px;
             margin: 102px 90px;
             width: 100%;
           }
+
+
+.snsimg ul li {
+  width: calc(20% - 12px);
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 44px;
+  margin: 6px;
+  cursor: grab;
+  transition:0.5s;
+}
+
+.tag{
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s;
+  color: #fff;
+  top: 100;
+  bottom: 100;
+  background: #9FCDCE60;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.snsimg ul li a{
+ display: block;
+ text-align: center;
+}
+
+.snsimg ul li:hover p{
+  top: 0;
+  bottom:0;
+  transition: 3s;
+}
+
+.click{
+  width: 151px;
+  transform: translateX(37px);
+}
+
