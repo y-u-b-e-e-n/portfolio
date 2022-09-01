@@ -11,6 +11,10 @@
 background: #5B1A7C;
 
 }
+#hd{ transition: 0.5s;}
+#hd.up{
+  transform: translateY(-40px);
+}
 #popup_yubeen span{
     color: #CBB5F7;
     font-size: 1.3em;
@@ -29,7 +33,7 @@ background: #5B1A7C;
              }
 
 #system span{color: #5B1A7C;
-                font-weight:500;   
+                font-weight:600;   
                 font-size:2rem;        
                }
 
@@ -42,15 +46,34 @@ background: #5B1A7C;
 #system h3, .youtubeback h3{
   color: #5B1A7C;
               font-size:2.5rem;
-              text-align: center;
+             
               font-weight:600;
-              margin-left: -52px;
+         
               margin-top: 9px;
           }
 
+
+
+
 .youtubeback h3{
-  transform: translateX(-253px);
+ 
 }
+
+.videoBox{
+  max-width:1067px;
+  max-height:600px;
+  position: relative;
+  height: 0;
+  padding-bottom: 56%;
+}
+.videoBox iframe{     position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  max-width: 1067px;
+  max-height: 600px;
+  margin: auto; }
 /* #system h3{color: #5B1A7C;} */
 .topgradient{
   background: rgb(180,167,216);
@@ -62,9 +85,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4a7d8",endCo
 
 .bottomgradient{
   background: rgb(255,255,255);
-  background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(159,205,206,1) 25%, rgba(180,167,216,1) 100%);
+  background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 0%, rgba(159,205,206,1) 25%, rgba(180,167,216,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(159,205,206,1) 25%, rgba(180,167,216,1) 100%);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(159,205,206,1) 25%, rgba(180,167,216,1) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 8%, rgba(159,205,206,1) 25%, rgba(180,167,216,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#b4a7d8",GradientType=1);
 }
 
@@ -90,10 +113,23 @@ margin-top:200px;
 
 #mainBanner{ 
   background-image: url(/yubeen/img/Gmainbanner.png); 
-  background-size: auto 80%;
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-position: center bottom;
+  background-size: 80%;
+  background-repeat: no-repeat;  
+  background-position: center;
+  height:100vw;
+  padding-top:30vw;
+}
+
+@media (min-width: 768px) {
+  #popup_yubeen button{ right:15px !important}
+  
+}
+
+@media (min-width:992px){
+  #mainBanner{  height: 100vh; background-size: auto 80%;background-position: center bottom; padding-top: 0; }
+  #system{
+    height: 60vh;
+  }
 }
 
 .button{
@@ -109,13 +145,15 @@ margin-top:200px;
 
 /*큐엔에이*/
 
+#qna{height: 95vh;}
+
 .qbg{
   background-image: url(/yubeen/img/Q.png);
   background-size: 100%  auto;
   background-repeat: no-repeat;
   width:280px;
   height:calc( 280px * 1.44 );
-
+  
 }
 
 .qbg p{
@@ -159,24 +197,59 @@ margin-top:200px;
 
 .gnb_1da.act{ color: #5B1A7C }
 
-
 /*중간 베너*/
 #middlebanner{
-  background-image: url(/yubeen/img/Gmiddlebanner.png);
-  background-size: 100%  auto;
+  background-image: url(/yubeen/img/Gmiddlebanner.png);  
   background-repeat: no-repeat;  
   text-align:end;
-  max-height:400px;
-  height:21vw;
-  padding:5vw 0;
+  max-height:400px; 
+  padding: 18vw 0 5vw;
+  background-size:auto 100%;
+  background-position: center;
+  
+}
+
+@media (min-width:992px) {
+
+  #middlebanner{   
+    background-size: 100%  auto;
+    padding: 7.5vw 0 2.5vw;   
+  }
+    
+}
+
+
+
+
+#middlebanner .container{
  
 }
+
+
+
+#middlebanner .container h3,
+#middlebanner .container p{
+font-weight: 500;
+color :#000000ae;}
+
+#middlebanner .container h3{
+font-size: 1.5rem;
+font-weight: 600;}
 
 #youtube{
 
   background-size: 100%  auto;
   background-repeat: no-repeat;
 }
+
+
+
+/* .videoBox{
+background:#FFF; 
+-moz-border-radius: 50px; 
+border-radius: 50px 60px; 
+margin:4%; 
+overflow:hidden;} */
 
 .iconNumber li i img{
   transform: translateY(-29px);
@@ -193,18 +266,19 @@ margin-top:200px;
 
 .youtubeback{
     background-image: url(/yubeen/img/back.png);
-    background-size: 60%  auto;
+    background-size: 45%  auto;
     background-repeat: no-repeat;
-    background-position:center -5%;
+    background-position:center 0;
 
 }
 
 #Pbanner{
-  background-image: url(/yubeen/img/Pbanner.png);
-  background-size: 100%  auto;
-  background-repeat: no-repeat;
-  height: 100vh;
-
+    background-image: url(/yubeen/img/Pbanner.gif);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-top: 8%;
+    background-position: center;
 }
 
 .snsimg ul li{
@@ -215,39 +289,63 @@ margin-top:200px;
   display: block;
 }
 
-#sns{
-  margin-top: -325px;
-}
 
 #sns .container h3,
 #sns .container h2{
   text-align: center;
-  transform: translateY(-133px);
   color: #5b1a7c;
   font-weight: 600;
-
 }
+
+#sns .container h3{
+font-size: 2rem;}
 
 #sns .container h2{
  font-size:2.5rem; 
- transform: translateY(-142px);
  margin-left: 12px;
 }
 
-.snsimg ul li:nth-child(2){
-  transform: translateY(-80px);
-}
-.snsimg ul li:nth-child(4){
-  transform: translateY(-80px);
-}
-.snsimg ul li:nth-child(7){
-  transform: translateY(-80px);
-}
-.snsimg ul li:nth-child(9){
-  transform: translateY(-80px);
+.ty80{ transform: translateY(-80px); }
+.snsimg ul li {
+  width: calc(20% - 12px);
 }
 
+@media (max-width:992px) {
+  .ty80-lg{ transform: translateY(-80px); }
+  .ty0-lg{ transform: translateY(0);}
+  .snsimg ul li {
+    width: calc(33.333% - 12px);
+  }
+}
+
+@media (max-width:768px) {
+  .ty80-md{ transform: translateY(-80px); }
+  .ty0-md{ transform: translateY(0);}
+  .snsimg ul li {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width:576px) {
+  .ty80-sm{ transform: translateY(-80px); }
+  .ty0-sm{ transform: translateY(0);}
+  
+}
+
+
+
+
+
+
+#sns{
+ 
+}
+
+
 /*유튜브*/
+#youtube{
+  margin-bottom: 6%;
+}
 
 .iconNumber li strong{
                       font-size: 1.5em;
@@ -255,13 +353,13 @@ margin-top:200px;
                        }
 
 .iconNumber{align-items: stretch;
-            margin: 102px 90px;
+            
             width: 100%;
           }
 
 
 .snsimg ul li {
-  width: calc(20% - 12px);
+  
   padding: 0;
   position: relative;
   overflow: hidden;
@@ -276,14 +374,17 @@ margin-top:200px;
   width: 100%;
   transition: all 0.5s;
   color: #fff;
-  top: 100;
-  bottom: 100;
-  background: #9FCDCE60;
+  top: 100%;
+  height:100%;
+  background: #9FCDCE95;
   display: flex;
   align-items: center;
   padding: 1rem;
   margin-bottom: 0;
 }
+
+
+
 
 .snsimg ul li a{
  display: block;
@@ -292,8 +393,6 @@ margin-top:200px;
 
 .snsimg ul li:hover p{
   top: 0;
-  bottom:0;
-  transition: 3s;
 }
 
 .click{
@@ -301,3 +400,243 @@ margin-top:200px;
   transform: translateX(37px);
 }
 
+
+
+/* slide */
+
+#slider {
+  position: relative;
+  height: 100%;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-next:after ,
+.swiper-button-prev:after
+{
+  color: #fff0;
+}
+
+:root {
+  --swiper-theme-color: #5B1A7C;
+
+}
+
+
+/* 연결 블루베리 */
+.berry{
+  margin-left:48%;
+  margin-top: -4%;
+}
+
+
+/*폼태그*/
+.form-group input,
+.row input,
+.row textarea
+{border:0 solid black;}
+
+.floating-label-form-group {
+          position: relative;
+          margin-bottom: 0;
+          padding-bottom: 0.5em;
+          border-bottom: 1px solid #e1e1e1;
+      }
+
+
+.form-group button{
+  color: #fff;
+    background-color: #E91C75;
+    border-color: #E91C75;
+    border-radius: 20px;
+    width: 156%;
+    height: 84%;
+    color: #ffffff;
+    font-size: 1.3rem;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.746);
+    margin-left: 190%;
+    margin-top: -80%;
+}
+
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color:  #5B1A7C;
+  border-color:  #5B1A7C;
+}     
+
+/* 탑버튼 */
+#top_btn{
+    position: fixed;
+    bottom: 20px;
+    width: 75px;
+    height: 75px;
+    right: 20px;
+    line-height: 46px;
+    border: 2px solid #fff0;
+    color: #fff0;
+    text-align: center;
+    font-size: 15px;
+    z-index: 90;
+    background: rgba(255, 255, 255, 0);}
+
+    #top_btn:hover {border-color:#ffffff00;
+                    background:#ffffff00;
+                    color:rgba(255, 255, 255, 0)}
+
+
+/* 폼태그 */
+
+.form{
+  line-height: 50px;
+}
+.form-control {
+  background-color: #fff0;
+  border: 1px solid #ffffff00;
+}
+
+.form-group input, .row input, .row textarea {
+  border: 0 solid #ffffff00;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus {
+  -webkit-box-shadow: 0 0 5px #ffffff00;
+  box-shadow: 0 0 5px #ffffff00;
+  border: 1px solid #ffffff00 !important;
+}
+.form-control:focus {
+  color: #ffffff;
+  background-color: #ffffff00;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 0%);
+}
+
+
+
+input[type='radio'] ,
+input[type=checkbox]
+{  
+  accent-color:#5B1A7C;
+  margin: 10px;
+  margin-left: 31px;
+}
+
+#saigo{
+
+padding-top: 6%;
+}
+
+.saigoText{
+margin-bottom: 5%;}
+
+.saigoText h1{
+color: #5b1a7c;
+font-weight: 800;
+}
+
+.saigoText p{
+font-size: 1.7rem;
+font-weight: 400;
+color: #5b1a7c;
+}
+
+
+.form label{
+color: #fff;
+font-size: 1.5em;
+font-weight: 400;
+}
+
+#name{
+  margin:2% -15%;
+}
+
+#email,
+#phone,
+#message
+{margin-top: 2%;}
+
+    
+.checkbox{color: #fff;
+    font-size: 1.2em;
+    font-weight: 100;}
+
+.checkbox a{color: #ffffff80;
+    font-weight: 100;
+    margin: 4%;}
+
+.frindly img{
+   }
+
+
+/* 푸터 */
+.ft_cnt a img{
+  position: absolute;
+  margin-top: -20%;
+}
+
+
+/* aos */
+.g:before{
+  border-bottom: 25px solid #E91C7560;
+}
+
+.g:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 15%;
+  bottom: 0;
+  margin: auto;
+  height: 5%;
+  transition: 2s;
+  transform: skew(350deg);
+}
+
+/* 하단 */
+
+.ft_logo a img{
+margin: -6%;
+margin-left: 21%;
+width: 14%;}

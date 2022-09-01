@@ -7,6 +7,9 @@ li{ list-style: none;
 }
 /* body{overflow-x: hidden;} */
 
+#gnb{
+margin-top: 3%;}
+
 #gnb a{ display: block; color:black; text-decoration: none; text-align: center;}
 
 .open > .fa-xmark { display:block }
@@ -49,16 +52,19 @@ li{ list-style: none;
     position: absolute;
     display: block;
     top:0;
-    left:0; right:0;
+    left:-10%; right:0;
     bottom:0;
     background-color:#2A5D83;
-    border-radius: 10px;
+    border-radius: 20px;
     width:0;
     margin:auto;
     transition: 0.5s;
 }
 
-#gnb li:hover a:before{ width:100%}
+#gnb li:hover a:before{
+    width:120%;
+
+}
 
 #gnb li:hover a{
     color:#d0d82e;
@@ -84,16 +90,57 @@ li{ list-style: none;
 }
 
 
-/* //////////////about/////////////// */
-#about{background-color:#231F20;}
 
-/*20220802 본인 작업*/
+/* //////20220901 서유빈 작업////// */
+
+
+/*상단, 네비*/
+.topbar{
+    background-color: #fff;
+}
+
+.logo img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+#gnb a{
+font-size: 1.2rem;
+font-weight: 500;
+}
 
 #home{background-image:url("/sogae/img/Pmainbanner.gif");
     width: 100%;
     background-size:100% auto;
     background-repeat:no-repeat;
-    height: 100vw;
+    height: 100vh;
    }
 
-.logo{width: 100px;}
+
+/* 프로필 */
+
+ #home,
+ #Profile
+ {background-color:#231F20;
+          height: 100vh;
+        }
+
+.cnt{
+    color: #fff;
+    border-left: 1px solid rgb(255, 255, 255);
+    height:100%;
+    left: 39%;
+    position: absolute;
+    margin-top: 10%;
+}
+
+.cnt p{
+    font-weight:100;
+}
+
+#Profile .container-md .inner .me{
+    margin-top: 17%;
+    flex:0% !important; 
+    max-width:0% !important;
+}
